@@ -1,46 +1,44 @@
-Here’s the revised report, incorporating a detailed **Overview of the Analysis** and **Results**, with placeholders for images or metrics where applicable:
+
+
+# Neural Network Model Report
 
 ---
 
-## **Neural Network Model Report**
-
----
-
-### **Overview of the Analysis**
+# Overview of the Analysis
 
 The purpose of this analysis was to create and evaluate a deep learning model that predicts whether funding applications submitted to Alphabet Soup will be successful. By leveraging a neural network, the organization can make data-driven decisions, optimizing resource allocation and prioritizing high-potential applications. The dataset included historical application information, which was processed and used to train a binary classification model. The performance of the model was assessed to ensure it meets the desired accuracy and generalizability for real-world deployment.
 
 ---
 
-### **Results**
+# Results
 
-#### **Data Preprocessing**
-- **Target Variable**: 
+# Data Preprocessing
+- Target Variable: 
   - `IS_SUCCESSFUL` – Indicates whether an organization's funding application was approved (`1`) or not (`0`).
-- **Feature Variables**: 
+- Feature Variables: 
   - Categorical: 
     - `APPLICATION_TYPE`, `AFFILIATION`, `CLASSIFICATION`, `USE_CASE`, `ORGANIZATION`
   - Numerical: 
     - `STATUS`, `ASK_AMT`
   - Categorical/Numerical Hybrid: 
     - `INCOME_AMT`, `SPECIAL_CONSIDERATIONS`
-- **Irrelevant Variables**: 
+- Irrelevant Variables: 
   - `EIN` and `NAME` were removed as they are unique identifiers with no predictive value.
   
-*Visuals*:
+#Visuals:
 - Below is a summary table of features after preprocessing:  
   *(Include an image of a table showing features, target variable, and dropped columns if applicable)*.
 
 ---
 
-#### **Compiling, Training, and Evaluating the Model**
-- **Model Architecture**:
-  - *Number of Layers*: [Insert details, e.g., "3 fully connected layers"]
-  - *Number of Neurons*: [Insert the number of neurons per layer]
-  - *Activation Functions*: [Insert activation functions used, e.g., "ReLU for hidden layers, Sigmoid for output"]
-- **Performance**:
-  - *Accuracy*: [Insert accuracy score, e.g., "80%"]
-  - *Loss*: [Insert loss value, e.g., "0.35"]
+# Compiling, Training, and Evaluating the Model
+- Model Architecture:
+  - *Number of Layers: [Insert details, e.g., "3 fully connected layers"]
+  - Number of Neurons: [Insert the number of neurons per layer]
+  - Activation Functions*: [Insert activation functions used, e.g., "ReLU for hidden layers, Sigmoid for output"]
+- Performance:
+  - Accuracy: [Insert accuracy score, e.g., "80%"]
+  - Loss: [Insert loss value, e.g., "0.35"]
   - *Other Metrics*: [Precision, recall, F1-score, etc., if available].
   
 *Visuals*:
@@ -62,17 +60,15 @@ The purpose of this analysis was to create and evaluate a deep learning model th
 
 ---
 
-### **Summary**
+# Summary
 
 The deep learning model achieved a performance accuracy of [insert performance, e.g., "85%"], making it a reliable tool for predicting funding success. While the model meets initial expectations, further refinement could improve its robustness and applicability in real-world scenarios.
 
-- **Recommendation**:
+- Recommendation:
   - Explore ensemble models (e.g., Random Forests, Gradient Boosting) to handle categorical data effectively and provide insights into feature importance.
   - Experiment with alternative neural network architectures, such as Convolutional Neural Networks (CNNs) or Recurrent Neural Networks (RNNs), if temporal or spatial data patterns exist.
   - Incorporate additional preprocessing techniques, such as feature scaling or one-hot encoding, to optimize feature representation.
 
 The analysis provides a strong foundation for Alphabet Soup’s application evaluation process, enabling better allocation of resources and informed decision-making.
 
----
 
-Let me know if you’d like to adjust this report further or include specific details, visuals, or metrics!
